@@ -1,0 +1,18 @@
+$background : red;
+
+body{
+    background-color: $background;
+}
+body{
+    height: 100vh;
+    .div{
+        .card{
+            background: red;
+        }
+    }
+    .container{
+        .card{
+            background: red;
+        }
+    }
+}

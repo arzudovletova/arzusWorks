@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+}
+
+.btn_start, 
+.quiz_box,
+.score-box{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.quiz_box.active{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+.score-box.active{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.quiz_box{
+    width: 550px;
+    transform: translate(-50%, -50%) scale(0.7);
+    transition: all 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.score-box{
+    width: 550px;
+    align-items: center;
+    justify-content: center;
+    padding:30px;
+    transform: translate(-50%, -50%) scale(0.7);
+    transition: all 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.score-box .icon{
+    font-size: 90px;
+    color:#007bff;
+    margin-bottom: 10px;
+}
+
+.score-box .score_text{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+}
+
+.quiz_box header .title{
+    font-size: 20px;
+    font-weight: 600;
+    font-weight: 500;
+}
+
+.quiz_box .question_text{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.quiz_box .option_list{
+    padding: 10px 0;
+}
+
+.quiz_box .option_list .option{
+    border: 1px solid #151d38;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quiz_box .option_list .option:hover{
+    color:#112b2c;
+    background-color: #ffd33d;
+}
+
+.quiz_box .option_list .option.correct{
+    color:#155724;
+    background-color: #d4edda;
+}
+
+.quiz_box .option_list .option.incorrect{
+    color:#721c24;
+    background-color: #f8d7da;
+}
+
+.next-btn{
+    opacity: 0;
+    pointer-events:none ;
+
+    transform: scale(0.9);
+    transition: all 0.3s ease;
+}
+
+.next-btn.dispopn{
+    opacity: 1;
+    pointer-events:auto ;
+
+    transform: scale(1);
+}
+
+.quiz_box .option_list .option.disabled{
+    pointer-events: none;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quiz_box header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+

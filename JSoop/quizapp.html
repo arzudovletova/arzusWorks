@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="quizapp.css">
+</head>
+<body>
+    <div class="btn_start">
+        <button class="btn btn-warning btn-lg ">Start quiz</button>
+    </div>
+
+        <div class=" card quiz_box ">
+            <header class="card-header">
+                <div class="title">Quiz App</div>
+                <div class="timer">
+                    <div class="time_text">Kalan Sure</div>
+                    <div class="time_second">10</div>
+                </div>
+            </header>
+            <section class="card-body">
+                <div class="question_text">
+                    <!-- <span>
+                        1-Hangisi Js paket yonetim uygulamasidir?
+                    </span> -->
+                </div>
+                <div class="option_list">
+                    <!-- <div class="option">
+                        <span>a: Node.js</span>
+                        <div class="icon"><i class="fas fa-check"></i></div>
+                    </div>
+                    <div class="option">
+                        <span>b: Typescript</span>
+                        <div class="icon"><i class="fas fa-check"></i></div>
+                    </div>
+                    <div class="option correct">
+                        <span>c: Npm</span>
+                        <div class="icon"><i class="fas fa-check"></i></div>
+                    </div>
+                    <div class="option incorrect">
+                        <span>d: Nuget</span>
+                        <div class="icon"><i class="fas fa-check"></i></div>
+                    </div> -->
+                </div>
+            </section>
+
+            <footer class="card-footer">
+                <div class="question_index">
+                    
+                </div>
+                <button class="btn btn-primary dispopn btn-sm next-btn">
+                    Next Question
+                </button>
+            </footer>
+        </div>
+
+        <div class="card score-box">
+            <div class="icon"><i class="fas fa-crown"></i></div>
+            <div class="score_text"></div>
+            <div class="buttons">
+                <button class="btn btn-primary btn_finish ">Finish test</button>
+                <button class="btn btn-primary btn_replay">Reply test</button>
+            </div>
+        </div>
+    <script src="quizapp.js"></script>
+</body>
+</html>
